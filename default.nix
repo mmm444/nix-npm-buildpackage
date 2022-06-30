@@ -13,7 +13,7 @@ let
         bname
       else
         bname + ".tgz";
-    in nameValuePair resolved {
+    in nameValuePair integrity {
       inherit name bname integrity;
       path = fetchurl {
         name = fname;
